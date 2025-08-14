@@ -1,0 +1,112 @@
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 54px;
+  z-index: 2;
+  margin: 0 10%;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-text);
+  cursor: default;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.menuItems {
+  display: flex;
+  gap: 47px;
+  list-style: none;
+}
+
+.menuItems a {
+  font-size: 1.5rem;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.menuItems a:hover {
+  color: grey;
+  text-decoration-color: rgb(181, 181, 181);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #212427;
+  display: none;
+  margin-top: 10px;
+}
+
+/* =========================
+   RESPONSIVE BREAKPOINTS
+   ========================= */
+
+/* Tablet / small screens */
+@media screen and (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 5%;
+    padding-top: 40px;
+  }
+
+  .menuItems {
+    gap: 20px; /* slightly smaller gap for smaller screens */
+  }
+
+  .menuItems a {
+    font-size: 1.3rem;
+  }
+}
+
+/* Mobile screens */
+@media screen and (max-width: 830px) {
+  .navbar {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .menu {
+    position: relative; /* allow menu to expand below */
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .menuItems {
+    display: none;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    gap: 8px;
+    width: 180px;
+    flex-direction: column;
+    padding: 16px 24px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+    align-items: center;
+    background-color: var(--color-bg); /* ensure menu background visible */
+  }
+
+  .menuItems.active {
+    display: flex;
+  }
+
+  .icon {
+    display: block;
+    margin-bottom: 20px;
+  }
+}

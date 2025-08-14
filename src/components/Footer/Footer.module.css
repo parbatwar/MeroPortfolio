@@ -1,0 +1,63 @@
+.footerContainer{
+  margin-top: 150px;
+  align-items: center;
+}
+
+.footerLinks{
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
+.footerLinks a{
+  text-decoration: none;
+  color: #212427;
+  transition: all 0.3s ease;
+}
+
+.footerLinks a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.footerInfo{
+  text-align: center;
+  color: rgb(87, 87, 87);
+  padding: 40px;
+}
+
+/* =========================
+   RESPONSIVE BREAKPOINTS
+   ========================= */
+
+/* Tablet / small screens */
+@media screen and (max-width: 1024px) {
+  .footerLinks {
+    gap: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  .footerInfo {
+    padding: 30px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile screens */
+@media screen and (max-width: 768px) {
+  .footerLinks {
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.25rem;
+    align-items: center;
+  }
+
+  .footerInfo {
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,104 @@
+.aboutContainer{
+  position: relative;
+  gap: 2rem;
+  margin: 10%;
+  height: auto;
+  min-height: 60vh;
+}
+
+.aboutHead{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  cursor: default;
+}
+
+.aboutP1{
+  font-size: 18px;
+}
+
+.aboutH1{
+  font-size: 3rem;
+}
+
+.aboutContent{
+  display: flex;
+  gap: 5rem;
+  cursor: default;
+}
+
+.aboutPic{
+  border-radius: 2rem;
+  width: 32%;
+  height: auto;
+}
+
+.detailsContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.aboutBox{
+  padding: 1.5rem;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.textContainer{
+  margin-top: 32px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #4a4a4a;
+}
+
+
+
+/* RESPONSIVENESS -------------------------------------------------*/
+
+/* Mid */
+@media (max-width: 1024px) {
+  .aboutContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .aboutPic {
+    width: 50%;
+  }
+
+  .aboutH1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .aboutContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20%;
+    gap: 1.5rem;
+  }
+
+  .aboutPic {
+    width: 70%;
+  }
+
+  .aboutH1 {
+    font-size: 2rem;
+  }
+
+  .aboutP1 {
+    font-size: 16px;
+  }
+
+  .aboutBox {
+    padding: 1rem;
+  }
+}
+

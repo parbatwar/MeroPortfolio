@@ -1,0 +1,174 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin: 10%;
+  margin-top: 5%;
+  z-index: 1;
+  height: auto;
+  min-height: 60vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-text);
+  z-index: 1;
+  margin-left: 10px;
+}
+
+.textP1 {
+  font-size: 20px;
+  cursor: default;
+}
+
+.textP2 {
+  font-size: 24px;
+  margin-bottom: 24px;
+  cursor: default;
+}
+
+.title {
+  font-size: 72px;
+  font-weight: 900;
+  cursor: default;
+}
+
+.btnContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.btnColor1 {
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--color-text);
+  border-radius: 100px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 26px;
+  border:rgb(57, 57, 57) 2.5px solid;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btnColor1:hover {
+  background-color: rgb(57, 57, 57);
+  color: white;
+}
+
+.btnColor2 {
+  text-decoration: none;
+  background-color: rgb(57, 57, 57);
+  color: white;
+  border: 2px solid var(--color-primary);
+  border-radius: 100px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 26px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btnColor2:hover {
+  background-color: rgb(30, 30, 30);
+  color: white;
+}
+
+.heroImg {
+  height: 400px;
+  width: 400px;
+  z-index: 1;
+  animation: floating 3s infinite ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+/* =========================
+   RESPONSIVE BREAKPOINTS
+   ========================= */
+
+/* Tablet / small screens */
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    height: auto; /* let height adjust on smaller screens */
+  }
+
+  .content {
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .title {
+    font-size: 56px;
+    text-align: center;
+  }
+
+  .textP1 {
+    font-size: 18px;
+  }
+
+  .textP2 {
+    font-size: 20px;
+  }
+
+  .btnContainer {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .heroImg {
+    width: 50%;
+    height: auto;
+    margin-bottom: 16px;
+  }
+}
+
+/* Mobile screens */
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 5%;
+    gap: 2rem;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .textP1 {
+    font-size: 16px;
+  }
+
+  .textP2 {
+    font-size: 18px;
+  }
+
+  .btnColor1,
+  .btnColor2 {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .heroImg {
+    width: 70%;
+  }
+}   

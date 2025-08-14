@@ -1,0 +1,168 @@
+.projectContainer{
+  position: relative;
+  gap: 2rem;
+  margin: 10%;
+  height: auto;
+  min-height: 60vh;
+}
+
+.projectHead{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  cursor: default;
+}
+
+.projectP1{
+  font-size: 18px;
+}
+
+.projectH1{
+  font-size: 3rem;
+}
+
+.projectImage {
+  border-radius: 2rem;
+  width: 90%;
+  height: 75%;
+}
+
+.projectBox{
+  padding: 1.5rem;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  width: 80%;
+  height: 20%;
+  background-color: transparent;
+}
+
+.projectContent{
+  display: flex;
+  gap: 32px;
+  cursor: default;
+}
+
+.projectTitle{
+  margin: 1rem;
+}
+
+.btnContainer {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.btnOne, .btnTwo {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btnOne {
+  background-color: transparent;
+  color: #333;
+  border: #333 2px solid;
+}
+
+.btnOne:hover {
+  background-color: #333;
+  color: white;
+}
+
+.btnTwo {
+  background-color: #333;
+  color: white;
+}
+
+.btnTwo:hover {
+  background-color: #000;
+}
+
+/* =========================
+   RESPONSIVE BREAKPOINTS
+   ========================= */
+
+/* Tablet / small screens */
+@media screen and (max-width: 1024px) {
+  .projectContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 1.5rem;
+    height: auto; /* allow container height to adjust */
+  }
+
+  .projectH1 {
+    font-size: 2.5rem;
+  }
+
+  .projectContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .projectImage {
+    width: 70%;
+    height: auto;
+  }
+
+  .projectBox {
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .projectTitle {
+    margin: 0.75rem 0;
+  }
+
+  .btnContainer {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .btnOne, .btnTwo {
+    width: 150px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile screens */
+@media screen and (max-width: 768px) {
+
+  .projectContainer{
+    margin-top: 20%;
+  }
+  
+  .projectH1 {
+    font-size: 2rem;
+  }
+
+  .projectP1 {
+    font-size: 16px;
+  }
+
+  .projectImage {
+    width: 90%;
+  }
+
+  .projectBox {
+    width: 100%;
+    padding: 0.8rem;
+  }
+
+  .btnOne, .btnTwo {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+}

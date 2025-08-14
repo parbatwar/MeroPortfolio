@@ -1,0 +1,134 @@
+.skillContainer{
+  position: relative;
+  gap: 2rem;
+  margin: 10%;
+  height: auto;
+  min-height: 60vh;
+}
+
+.skillHead{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  cursor: default;
+}
+
+.skillP1{
+  font-size: 18px;
+}
+
+.skillH1{
+  font-size: 3rem;
+  color: #212427;
+}
+
+.skillTitle{
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75 rem;
+  margin-bottom: 2rem;
+}
+
+.skillContent{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 32px;
+  cursor: default;
+}
+
+.articleBox{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: initial;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article{
+  display: flex;
+  width: 10rem;
+  gap: 1.5rem;
+}
+
+.skillBox{
+  padding: 1.5rem;
+  flex: 1;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+/* =========================
+   RESPONSIVE BREAKPOINTS
+   ========================= */
+
+/* Tablet / small screens */
+@media screen and (max-width: 1024px) {
+  .skillContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 1.5rem;
+    height: auto; /* allow content to expand naturally */
+  }
+
+  .skillH1 {
+    font-size: 2.5rem;
+  }
+
+  .skillTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .skillContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .articleBox {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  article {
+    width: 12rem;
+    gap: 1rem;
+  }
+
+  .skillTag{
+    align-items: center;
+  }
+}
+
+/* Mobile screens */
+@media screen and (max-width: 768px) {
+  .skillContainer{
+    margin-top: 20%;
+  }
+
+  .skillH1 {
+    font-size: 2rem;
+  }
+
+  .skillTitle {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  article {
+    width: 10rem;
+    gap: 0.8rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skillBox {
+    padding: 1rem;
+  }
+}
+
+
