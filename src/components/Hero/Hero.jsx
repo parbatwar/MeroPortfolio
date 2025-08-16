@@ -18,7 +18,7 @@ export const Hero = () => {
         <div className={styles.btnContainer}>
           <button 
             className={styles.btnColor1}
-            onClick={() => window.open('../../../public/CV Parbat Sunuwar.pdf')}
+            onClick={() => window.open('../../../public/CV_Parbat_Sunuwar.pdf')}
           >
             Download CV
           </button>
